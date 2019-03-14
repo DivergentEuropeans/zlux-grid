@@ -31,7 +31,8 @@ import { ZluxFlyoverModule } from '@zlux/widgets';
   templateUrl: 'zlux-grid.component.html',
   styleUrls: ['zlux-grid.component.css'],
   host: {'[class.without-vertical-scroll]':'customPaginator || !scrollableVertical',
-         '[class.auto-layout]':'autoLayout'}
+         '[class.auto-layout]':'autoLayout',
+         '[class.with-scroll]':'scrollableHorizontal && scrollableVertical'}
 })
 export class ZluxGridComponent implements OnChanges, AfterViewChecked {
   @Input() customTemplates: {};
@@ -44,7 +45,7 @@ export class ZluxGridComponent implements OnChanges, AfterViewChecked {
   @Input() paginator: boolean;
   @Input() customPaginator: boolean;
   @Input() dynamicPageSize: boolean;
-  @Input() rowsPerPage = 9;
+  @Input() rowsPerPage = 15;
   @Input() resizableColumns: boolean;
   @Input() scrollableHorizontal: boolean;
   @Input() scrollableVertical: boolean;

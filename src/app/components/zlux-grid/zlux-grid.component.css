@@ -41,6 +41,10 @@
   overflow-y: hidden;
 }
 
+:host.with-scroll > p-table {
+  overflow: auto;
+}
+
 :host.auto-layout > p-table >>> .ui-table-wrapper {
   overflow: unset;
 }
