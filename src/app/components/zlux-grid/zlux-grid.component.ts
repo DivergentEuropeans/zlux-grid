@@ -44,7 +44,7 @@ export class ZluxGridComponent implements OnChanges, AfterViewChecked {
   @Input() paginator: boolean;
   @Input() customPaginator: boolean;
   @Input() dynamicPageSize: boolean;
-  @Input() rowsPerPage = 15;
+  @Input() rowsPerPage = 9;
   @Input() resizableColumns: boolean;
   @Input() scrollableHorizontal: boolean;
   @Input() scrollableVertical: boolean;
